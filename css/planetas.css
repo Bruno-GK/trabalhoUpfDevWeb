@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* Fundo geral com imagem, cobrindo toda a área e fixa */
+  background: url('../img/fundo/sky-night-star-milky-way-cosmos-atmosphere-651343-pxhere.com.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 60px;
+  color: #f0f0f0;
+}
+
+@font-face {
+  font-family: 'Starjhol';
+  src: url('../font/Starjhol.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Starjedi';
+  src: url('../font/Starjedi.ttf') format('truetype');
+}
+
+h1, h2, h3 {
+  font-family: 'Starjhol', sans-serif;
+  color: #ffd700;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+nav.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  z-index: 1000;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+}
+
+nav.menu ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav.menu li {
+  cursor: pointer;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+nav.menu li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.lista {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: #ffffff;
+  z-index: 999;
+}
+
+.lista ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lista li {
+  cursor: pointer;
+}
+
+.lista img {
+  width: 30px !important;
+  height: auto;
+  vertical-align: middle;
+}
+
+section.conteudo {
+  width: 95%;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.astros {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.astros img {
+  width: 25%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.astros h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.astros p {
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.astros span {
+  font-weight: bold;
+  font-family: 'Starjedi', sans-serif;
+  color: #ffd700;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #cccccc;
+  background-color: #111111;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #89cff0;
+  text-decoration: none;
+  margin: 0 8px;
+}

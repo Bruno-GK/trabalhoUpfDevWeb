@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abertura Star Wars</title>
+
+  <!-- Fonte Orbitron -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: yellow;
+      font-family: 'Orbitron', sans-serif;
+      overflow: hidden;
+    }
+
+    .star-wars {
+      position: relative;
+      height: 100vh;
+      perspective: 400px;
+      overflow: hidden;
+    }
+
+    .crawl {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      transform-origin: 50% 100%;
+      animation: crawl 60s linear infinite;
+    }
+
+    .crawl-text {
+      width: 80%;
+      margin: 0 auto;
+      text-align: justify;
+      font-size: 2rem;
+      transform: rotateX(25deg);
+    }
+
+    @keyframes crawl {
+      0% {
+        top: 100%;
+        transform: rotateX(25deg) translateZ(0);
+      }
+      100% {
+        top: -200%;
+        transform: rotateX(25deg) translateZ(-1000px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="star-wars">
+    <div class="crawl">
+      <div class="crawl-text">
+        <h2>Capítulo I</h2>
+        <p>Há muito tempo, em uma galáxia muito, muito distante...</p>
+        <p>O Sistema Solar está em paz. O Sol brilha forte, mantendo os planetas em sua dança cósmica. Mas forças misteriosas nos cinturões de asteroides e nos confins do cinturão de Kuiper guardam segredos que podem mudar o rumo da história.</p>
+        <p>Exploradores da Terra embarcam em uma jornada científica para desvendar os mistérios de planetas anões como Plutão e Éris, tentando entender por que não são mais considerados planetas completos...</p>
+        <p>A aventura começa agora.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
